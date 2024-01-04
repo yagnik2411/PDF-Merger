@@ -1,0 +1,104 @@
+
+/* Global styling for the entire body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+/* Styling for heading level 1 */
+h1 {
+    text-align: center;
+    color: #3498db;
+}
+
+/* Styling for the form container */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Background color change on form hover */
+form:hover {
+    background-color: #2c3e50;
+}
+
+/* Styling for form labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #3498db;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Styling for file input */
+input[type="file"] {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Border color change on file input hover */
+input[type="file"]:hover {
+    border-color: #3498db;
+}
+
+/* Styling for file input focus state */
+input[type="file"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px #3498db;
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Background color change on submit button hover */
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive styling for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    form {
+        margin: 20px 10px;
+    }
+}
+
+/* Keyframe animation for fadeIn effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 

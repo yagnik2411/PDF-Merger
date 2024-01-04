@@ -1,0 +1,48 @@
+<!-- 
+  This is the main HTML document for the PdfMerger webpage.
+  It includes a form for uploading two PDF files and merging them.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character set and viewport for better rendering on different devices -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Set the title of the webpage -->
+    <title>Pdf Merger</title>
+</head>
+
+<body>
+    <!-- Main content of the webpage -->
+    <h1>Welcome to PdfMerger!</h1>
+
+    <!-- 
+      Form for uploading PDF files and initiating the merge process.
+      The action attribute specifies the URL to which the form data will be submitted.
+      The method attribute is set to "post" for security reasons.
+      The enctype attribute is set to "multipart/form-data" for handling file uploads.
+    -->
+    <form action="http://localhost:8080/" method="post" enctype="multipart/form-data">
+        <!-- Input for uploading the first PDF file -->
+        <label for="pdf1">Upload First PDF file</label>
+        <input type="file" name="pdf1" id="pdf1" accept=".pdf" />
+
+        <!-- Input for uploading the second PDF file -->
+        <label for="pdf2">Upload Second PDF file</label>
+        <input type="file" name="pdf2" id="pdf2" accept=".pdf" />
+
+        <br />
+
+        <!-- Submit button to trigger the merge process -->
+        <input type="submit" value="Merge" />
+    </form>
+</body>
+
+</html>
